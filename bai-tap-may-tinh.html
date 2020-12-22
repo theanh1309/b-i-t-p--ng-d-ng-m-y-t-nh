@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+    <h1>Caculator by Thế Anh</h1>
+    <input type="text" id="sothunhat"/><input type="text" id="sothuhai"/><br>
+    <button type="button" onclick="cong()">Cộng</button>
+    <button type="button" onclick="tru()">Trừ</button>
+    <button type="button" onclick="nhan()">Nhân</button>
+    <button type="button" onclick="chia()">Chia</button>
+    <script>
+        function cong() {
+            let sothu1 =Number( document.getElementById("sothunhat").value )
+            let sothu2 =Number( document.getElementById("sothuhai").value )
+            let tong2so = sothu1 + sothu2
+            alert("Kết quả:" + tong2so)
+            
+        }
+        function tru() {
+            let sothu1 =Number( document.getElementById("sothunhat").value )
+            let sothu2 =Number( document.getElementById("sothuhai").value )
+            let hieu2so = sothu1 - sothu2
+            alert("Kết quả:" + hieu2so)
+
+        }
+        function nhan() {
+            let sothu1 =Number( document.getElementById("sothunhat").value )
+            let sothu2 =Number( document.getElementById("sothuhai").value )
+            let tich2so = sothu1 * sothu2
+            alert("Kết quả:" + tich2so)
+
+        }
+        function chia() {
+            let sothu1 =Number( document.getElementById("sothunhat").value )
+            let sothu2 =Number( document.getElementById("sothuhai").value )
+            let thuong2so = sothu1 / sothu2
+            alert("Kết quả:" + thuong2so)
+
+        }
+
+    </script>
+    Kết quả: <span id="tong2so"></span>
+</body>
+</html>
